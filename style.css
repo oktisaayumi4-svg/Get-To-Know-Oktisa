@@ -152,3 +152,41 @@ ol li::marker {
     padding-top: 30px;
     border-top: 1px dashed #f9c6d3;
 }
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 20px 16px;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    table tr td:first-child {
+        width: 120px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    blockquote {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+
+    ul, ol {
+        padding-left: 16px;
+    }
+}
