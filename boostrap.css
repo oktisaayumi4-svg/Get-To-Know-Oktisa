@@ -1,0 +1,325 @@
+:root {
+  --pink-soft:    #fff0f5;
+  --pink-mid:     #ffd6e3;
+  --pink-accent:  #e75480;
+  --pink-border:  #f4a7b9;
+  --pink-text:    #9e3060;
+  --pink-muted:   #c2849a;
+  --bg-body:      #f9eef5;
+  --hero-grad:    linear-gradient(135deg, #ffe4ee, #ffd6e3, #f9c6d3);
+  --navbar-grad:  linear-gradient(90deg, #f9c6d3, #ffd6e3);
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  :root {
+    --pink-soft:    #f5e6f5;
+    --pink-mid:     #e8c4f0;
+    --pink-accent:  #9b45c2;
+    --pink-border:  #d4a0e8;
+    --pink-text:    #6a1e8a;
+    --pink-muted:   #a06ab4;
+    --bg-body:      #f0e4f8;
+    --hero-grad:    linear-gradient(135deg, #eedcf5, #e8c4f0, #dba8eb);
+    --navbar-grad:  linear-gradient(90deg, #dba8eb, #e8c4f0);
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --pink-soft:    #fff5e6;
+    --pink-mid:     #ffd9a8;
+    --pink-accent:  #e07820;
+    --pink-border:  #f4b97a;
+    --pink-text:    #9e4a10;
+    --pink-muted:   #c28050;
+    --bg-body:      #fdf3e8;
+    --hero-grad:    linear-gradient(135deg, #ffecd4, #ffd9a8, #ffcb85);
+    --navbar-grad:  linear-gradient(90deg, #ffd9a8, #ffecd4);
+  }
+}
+
+body {
+  background-color: var(--bg-body);
+  color: #6b3a50;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.navbar-custom {
+  background: var(--navbar-grad);
+  border-bottom: 2px solid var(--pink-border);
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: var(--pink-text) !important;
+  font-weight: 600;
+}
+.navbar-custom .nav-link:hover {
+  color: var(--pink-accent) !important;
+}
+
+.hero-section {
+  background: var(--hero-grad);
+  border-radius: 20px;
+  padding: 48px 36px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.hero-section h1 {
+  color: var(--pink-accent);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.hero-badge {
+  background-color: var(--pink-mid);
+  color: var(--pink-text);
+  border: 1px solid var(--pink-border);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+.hero-avatar-placeholder {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: var(--pink-mid);
+  border: 5px solid var(--pink-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  color: var(--pink-accent);
+}
+.hero-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--pink-border);
+  box-shadow: 0 4px 16px rgba(231,84,128,0.25);
+}
+
+#data-diri, #alasan, #hobi, #keahlian, #kontak {
+  padding-top: 8px;
+  margin-bottom: 32px;
+}
+.section-heading {
+  color: var(--pink-accent);
+  font-weight: 700;
+  border-left: 5px solid var(--pink-border);
+  padding-left: 12px;
+  margin-bottom: 24px;
+}
+
+.blockquote-pastel {
+  background: linear-gradient(135deg, var(--pink-soft), var(--pink-mid));
+  border-left: 6px solid var(--pink-border);
+  padding: 16px 24px;
+  border-radius: 0 12px 12px 0;
+  font-style: italic;
+  color: var(--pink-text);
+  margin-bottom: 24px;
+}
+
+.foto-wrapper {
+  background: var(--pink-soft);
+  border: 2px solid var(--pink-border);
+  border-radius: 20px;
+  padding: 28px 20px;
+  text-align: center;
+}
+.foto-placeholder {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--pink-mid);
+  border: 5px solid var(--pink-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.foto-profil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--pink-border);
+  box-shadow: 0 4px 16px rgba(231,84,128,0.25);
+}
+
+.sosmed-pill {
+  background: #fff;
+  border: 1px solid var(--pink-border);
+  color: var(--pink-text);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.2s, transform 0.2s;
+}
+.sosmed-pill:hover {
+  background: var(--pink-mid);
+  transform: scale(1.05);
+}
+
+.info-card {
+  background: #fff;
+  border: 1px solid var(--pink-border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(231,84,128,0.15);
+  border-color: var(--pink-accent);
+}
+.info-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--pink-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--pink-accent);
+  flex-shrink: 0;
+}
+.info-label {
+  font-size: 11px;
+  color: var(--pink-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+.info-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pink-text);
+}
+
+.card-pastel {
+  background: #fff;
+  border: 1px solid var(--pink-border);
+  border-radius: 16px;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+.card-pastel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(231,84,128,0.2);
+  border-color: var(--pink-accent);
+}
+.card-pastel .card-header {
+  background: var(--pink-mid);
+  color: var(--pink-text);
+  font-weight: 700;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1px solid var(--pink-border);
+}
+
+.hobi-card {
+  background: var(--pink-soft);
+  border: 1px solid var(--pink-border);
+  border-radius: 14px;
+  padding: 20px 12px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hobi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(231,84,128,0.18);
+}
+.hobi-icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 8px;
+  color: var(--pink-accent);
+}
+
+.skill-badge {
+  background-color: var(--pink-soft);
+  color: var(--pink-text);
+  border: 1px solid var(--pink-border);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 6px 4px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.skill-badge:hover {
+  background-color: var(--pink-mid);
+  transform: scale(1.05);
+}
+.skill-badge i { margin-right: 6px; }
+
+.social-btn {
+  background: #fff;
+  border: 2px solid var(--pink-border);
+  color: var(--pink-text);
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s, transform 0.2s;
+}
+.social-btn:hover {
+  background: var(--pink-mid);
+  color: var(--pink-text);
+  transform: scale(1.04);
+}
+
+hr.pink-hr {
+  border: none;
+  border-top: 2px solid var(--pink-border);
+  margin: 36px 0;
+}
+
+.footer-pastel {
+  background: var(--navbar-grad);
+  border-top: 2px solid var(--pink-border);
+  color: var(--pink-muted);
+  font-size: 13px;
+  font-style: italic;
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .hero-section { padding: 24px 16px; border-radius: 12px; margin-top: 12px; }
+  .hero-section h1 { font-size: 21px; }
+  .info-card { padding: 12px 14px; }
+  .hobi-card { padding: 14px 8px; }
+  .skill-badge { font-size: 13px; padding: 6px 14px; }
+  .social-btn { padding: 10px 16px; font-size: 13px; }
+  .foto-wrapper { padding: 18px 12px; }
+  #data-diri, #alasan, #hobi, #keahlian, #kontak { margin-bottom: 20px; }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .hero-section { padding: 36px 24px; border-radius: 16px; }
+  .hero-section h1 { font-size: 24px; }
+}
